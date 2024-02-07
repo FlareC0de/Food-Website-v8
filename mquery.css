@@ -1,0 +1,175 @@
+@media screen and (max-width: 1150px){
+    .hero{
+        height: auto;
+    }
+    .hero .container{
+      padding: 100px 0px 120px;
+    }
+    .hero .top-sec{
+       width: 100%;
+       display: flex;
+       gap: 150px;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+    .hero .placeholder{
+        width: 500px;
+        height: 500px;
+    }
+    .hero .placeholder .main{
+        width: 420px;
+        height: 420px;
+        
+    }
+    .hero .hero-text{
+        max-width: 100%;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 930px){
+    header .desktop-nav{
+        display: none;
+    }
+    header .end{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+    .hamb{
+        width: 32px;
+        cursor: pointer;
+    }
+    .hamb span{
+        display: block;
+        height: 2px;
+        background-color: var(--clr-primary);
+
+        transition-duration: .3s;
+        transition-property: transform opacity;
+    }
+    .hamb span#mid{
+        margin: 7px 0;
+    }
+
+    .hamb.clicked span#top{
+        transform: translateY(9px) rotate(42deg);
+    }
+    .hamb.clicked span#mid{
+        transform: translateX(9px);
+        opacity: 0;
+
+        transition-duration: .5s;
+        transition-property: opacity transform;
+    }
+    .hamb.clicked span#bottom{
+        transform: translateY(-9px) rotate(-42deg);
+    }
+
+    .mobile-nav{
+        display: block;
+        width: 80%;
+        background-color: var(--clr-primary);
+        padding: 50px;
+        display: grid;
+        gap: 24px;
+
+        position: absolute;
+        right: 10%;
+        top: -100%;
+        z-index: 10;
+        transition: 0.3s top;
+    }
+
+    .mobile-nav.active{
+        top: 100px;
+    }
+    .mobile-nav a{
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--clr-dark);
+    }
+    .mobile-nav a:hover{
+        color: var(--clr-light);
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+    .hero .top-sec{
+       margin-bottom: 100px;
+    }
+    
+    .hero .container{
+        padding: 100px 0 60px;
+     }
+     .hero .bottom-sec{
+        position: static;
+        margin-bottom: 0;
+
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .hero .bottom-sec .btm-left{
+        position: static;
+        bottom: 0;
+        left: 0;
+        rotate: 0deg;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .hero .placeholder{
+        width: 400px;
+        height: 400px;
+
+    }
+
+    .hero .placeholder .main{
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header .logo img{
+        width: 100%;
+    }
+    header .end{
+        gap: 16px;
+    }
+    .hero .container{
+        padding: 50px 0 50px;
+    }
+
+    .hero .top-sec{
+        margin-bottom: 110px;
+        gap: 50px;
+     }
+
+    .hero .placeholder{
+        width: 300px;
+        height: 300px;
+    }
+    .hero .placeholder .main{
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero .placeholder .shape{
+        width: 100px;
+        top: -10px;
+        left: 20px;
+    }
+    .hero .placeholder .spoon{
+        width: 250px;
+        top: -60px;
+        left: 10px;
+    }
+
+    .hero .bottom-sec .btm-left a{
+        display: block;
+    }
+}
